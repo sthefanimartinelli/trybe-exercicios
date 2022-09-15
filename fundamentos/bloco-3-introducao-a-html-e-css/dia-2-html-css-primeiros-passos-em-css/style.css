@@ -1,0 +1,54 @@
+h1 {
+    /*1 - Modifique o tamanho do h1 para 65 pixels*/
+    font-size: 65px;
+    /* 2 - Modifique a cor do texto do h1 para laranja */
+    color: orange;
+}
+
+#unordered-list {
+    /*3 - Modifique a cor de fundo da lista não ordenada*/
+    background-color: fuchsia;
+}
+
+.background-color-ul-e-p {
+    /*4 - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo*/
+    background-color: aliceblue;
+}
+
+h1 {
+    /*1 - Modifique o font-family do h1 para sans-serif*/  
+    font-family: sans-serif;
+  }
+
+  p {
+    /*2 - Deixe o parágrafo com o font-weight 600*/  
+    font-weight: 600;
+    /*4 - Coloque o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body*/ 
+    font-size: 3em;
+  }
+
+  body {
+    /*3 - Modifique o font-size do body para 16px*/    
+    font-size: 16px;
+  }
+
+  /*6 - Troque a cor de fundo de cada item da lista para a cor correspondente ao texto*/ 
+  #Amarelo {
+    background-color: yellow;
+  }
+
+  #Vermelho {
+    background-color: red;
+  }
+
+  #Marrom {
+    background-color: brown;
+  }
+  
+  /*5 - Explore as propriedades font-style, line-height, text-align e text-decoration*/ 
+  ul {
+    font-style: italic;
+    line-height: 20px;
+    text-align: justify;
+    text-decoration: underline
+  }
