@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <style>
+        h1 {
+            /*1 - Modifique o tamanho do h1 para 65 pixels*/
+            font-size: 65px;
+            /* 2 - Modifique a cor do texto do h1 para laranja */
+            color: orange;
+        }
+
+        #unordered-list {
+            /*3 - Modifique a cor de fundo da lista não ordenada*/
+            background-color: fuchsia;
+        }
+  
+        .background-color-ul-e-p {
+            /*4 - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo*/
+            background-color: aliceblue;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios 3.2</h1>
+    <p class="background-color-ul-e-p">Qual é a sua cor favorita?</p>
+    <ul id="unordered-list" class="background-color-ul-e-p">
+      <li>Amarelo</li>
+      <li>Vermelho</li>
+      <li>Marrom</li>
+    </ul>
+  </body>
+</html>
