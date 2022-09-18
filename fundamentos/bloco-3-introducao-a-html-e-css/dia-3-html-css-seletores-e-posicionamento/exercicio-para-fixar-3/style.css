@@ -22,3 +22,48 @@ h1 em, h2 em {
     font-size: 40px;
     margin: 1px solid black;
 }
+/* 3 - Faça todas as li's terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito. */
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+/* 4 - Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilize uma cor de fundo rosa. */
+
+.language li:not(:nth-child(n+4)) {
+    color: blue;
+}
+
+.pink-bg {
+    background-color: pink;
+  }
+
+  /* 5 - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site" */
+
+ .aliados li a:hover {
+    font-weight: 700;
+  }
+
+  .aliados li a[href*="stackoverflow"] {
+    color: orange;
+  }
+  
+  .aliados li a[href*="w3schools"] {
+    color: green;
+  }
+  
+  .aliados li a[href*="mozilla"] {
+    color: black;
+  }
+  
+  .aliados li a[href*="devdocs"] {
+    color: yellow;
+  }
+  
+  .aliados li a[href*="trybe"] {
+    color: green;
+  }
