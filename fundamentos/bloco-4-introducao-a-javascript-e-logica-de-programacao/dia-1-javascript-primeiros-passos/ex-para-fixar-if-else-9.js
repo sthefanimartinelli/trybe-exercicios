@@ -12,9 +12,9 @@ const custoProduto = 10;
 const valorDeVenda = 30;
 let quantidadeVenda = 1000;
 
-if (custoProduto < 0 || valorDeVenda < 0) {
+if (custoProduto <= 0 || valorDeVenda <= 0) {
     console.log('Erro, valores inseridos estão incorretos');
 } else {
-    let lucro = (valorDeVenda - custoProduto * 1,2) * quantidadeVenda;
+    let lucro = (valorDeVenda - (custoProduto * 1.2)) * quantidadeVenda;
     console.log(lucro);
 }
