@@ -25,24 +25,19 @@
         const irmao = document.createElement('section');
         irmao.id = 'irmao';
         pai.appendChild(irmao);
-
         // Crie um filho para elementoOndeVoceEsta.
         const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
-        const filhoElementoOndeVoceEsta = document.createElement('section');
-        filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
-        elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
-
+        const filho = document.createElement('section');
+        filho.id = 'filho';
+        elementoOndeVoceEsta.appendChild(filho);
         // Crie um filho para primeiroFilhoDoFilho.
         const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
-        const filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
-        filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
-        primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
-
+        const primeiroFilho = document.createElement('section');
+        primeiroFilho.id = 'primeiroFilho'
+        primeiroFilhoDoFilho.appendChild(primeiroFilho);
         // A partir desse filho criado, acesse terceiroFilho.
-        const terceiroFilho = filhoDoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling;
-
+        const terceiroFilho = primeiroFilho.parentElement.parentElement.nextElementSibling;
         console.log(terceiroFilho);
-
       </script>
 </body>
 </html>

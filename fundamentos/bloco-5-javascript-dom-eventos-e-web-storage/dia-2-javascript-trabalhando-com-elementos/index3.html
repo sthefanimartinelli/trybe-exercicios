@@ -21,25 +21,18 @@
       </main>
       <script>
         // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
-
         const pai = document.getElementById('pai');
-        // console.log(pai);
         const filhosDoPai = pai.childNodes;
-        // console.log(filhosDoPai);
 
-        // console.log(filhosDoPai.length);
         for (let index = filhosDoPai.length - 1; index >= 0; index -= 1) {
-            const filhoAtual = filhosDoPai[index];
-            if (filhoAtual.id !== 'elementoOndeVoceEsta') {
-                filhoAtual.remove();
-                
-            }
+          let filho = filhosDoPai[index];
+          if (filho.id !== 'elementoOndeVoceEsta') {  
+            filho.remove();
+          }
         }
+        const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+        elementoOndeVoceEsta.lastElementChild.remove();
 
-        const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
-        segundoEUltimoFilhoDoFilho.remove();
-
-        console.log(filhosDoPai);
       </script>
 </body>
 </html>
