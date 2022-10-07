@@ -31,8 +31,11 @@ function clearFields() {
     const textArea = document.querySelector('textarea');
     for (let index = 0; index < formElements.length; index += 1) {
       const userInput = formElements[index];
-      userInput.value = '';
-      userInput.checked = false;
+      if (formElements[index].type === 'radio' || formElements[index].type === 'checkbox'){
+        userInput.checked = false;
+      } else {
+        userInput.value = '';
+      } 
     }
     textArea.value = '';
 }
