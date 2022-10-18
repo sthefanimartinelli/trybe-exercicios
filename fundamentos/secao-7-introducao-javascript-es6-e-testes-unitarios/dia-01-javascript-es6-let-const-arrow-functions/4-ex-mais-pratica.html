@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <span id="text">0</span>
+  </div>
+  <button id="button-test">clique aqui!</button>
+</body>
+<script>
+  let clickCount = 0;
+  const textToDisplay = document.querySelector('#text');
+  const buttonTest = document.querySelector('#button-test');
+
+  buttonTest.addEventListener('click', () => textToDisplay.innerHTML = clickCount += 1);
+</script>
+</html>
