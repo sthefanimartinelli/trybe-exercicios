@@ -43,4 +43,4 @@ const wastedByMage = (battleMembers) => {
   return { dano, mana };
 }
 
-console.log(wastedByMage(battleMembers));
+// console.log(wastedByMage(battleMembers));
